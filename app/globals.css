@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown>* {
+  all: revert;
+}
+
+
+.blogContent figcaption {
+  text-align: center;
+  font-size:.8rem;
+  padding:5px;
+  color: grey;
+}
+/* .blogContent ul li{
+  padding-top: 10px;
+  padding-bottom:10px;
+} */
+
+.blogContent #frequently-asked-questions ul li{
+  padding-top:20px;
+}
+
+
+.blogContent a {
+  text-decoration: underline;
+  color : #8D0169;
+}
+
+.blogContent li a {
+  text-decoration: none;
+}
+
+.blogContent dt{
+  font-weight:600;
+}
+
+.blogContent img {
+  display : flex;
+  margin-left : auto;
+  margin-right : auto;
+  width : 1080px;
+  height : 360px;
+  object-fit : cover;
+  border-radius : 12px;
+  transform-origin: center;
+}
+@media screen and (min-width: 375) {
+  .blogContent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Responsive width */
+    max-width: 1080px; /* Ensure max width */
+    height: 360px ; /* Fixed height for this breakpoint */
+    object-fit: cover;
+    border-radius: 12px;
+    transform-origin: center;
+  }
+}
+
+/* For laptop screens (1024px and above) */
+@media screen and (min-width: 1024px) {
+  .blogContent img {
+    height: 480px; /* Increase height for larger screens */
+  }
+}
+
+/* For desktop screens (1440px and above) */
+@media screen and (min-width: 1440px) {
+  .blogContent img {
+    height: 600px; /* Further increase height for large desktops */
+  }
+}
+
+.blogContent table{
+  border:1px solid black;
+  width:100%;
+}
+
+.blogContent table th{
+  text-align:center;
+}
+
+.blogContent table td{
+  text-align:center;
+  gap:10px;
+  border:1px solid black;
+}
